@@ -11,7 +11,8 @@
         }    
         stage('Test Code')
       { steps
-       { sh "chmod u+x Test.py" sh "python3 Test.py" } 
+       { sh "chmod u+x Test.py" 
+        sh "python3 Test.py" } 
       } 
      }
  }  
