@@ -7,12 +7,9 @@ sh "chmod u+x Test.py"
 stage('Build Code') {
 steps {
 sh "chmod u+x Prog1.py" sh "./Prog1.py"
-} 
-}
+} }
+ stage('Test Code') { steps {
+sh "chmod u+x Test.py"
 sh "./Test.py" }
-
+} }
 }
-}
-
-}
-
